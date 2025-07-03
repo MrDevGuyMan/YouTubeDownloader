@@ -6,7 +6,8 @@ def download_video(url, format_choice):
     os.makedirs("downloads", exist_ok=True)
 
     ydl_opts = {
-        'outtmpl': 'downloads/%(title)s.%(ext)s'
+        'outtmpl': 'downloads/%(title)s.%(ext)s',
+        'cookiefile': 'cookies.txt',
     }
 
     if format_choice == 'mp3':
