@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>YouTube Downloader</title>
+</head>
+
+<body style="font-family: sans-serif; text-align: center; margin-top: 80px;">
+
+    <h2>YouTube Downloader</h2>
+
+    <form method="POST">
+        <input type="text" name="url" placeholder="Paste YouTube URL here" required size="50"><br><br>
+        <label><input type="radio" name="format" value="mp4" checked> Video (MP4)</label>
+        <label><input type="radio" name="format" value="mp3"> Audio (MP3)</label><br><br>
+        <button type="submit">Download</button>
+    </form>
+
+    <hr style="margin-top: 50px; width: 60%;">
+
+    <p style="font-size: 1.05em; max-width: 600px; margin: 40px auto; line-height: 1.6;">
+        If this tool helped you out and you're satisfied with the service,<br>
+        <strong>rack up some Karma points</strong> and consider helping me out in return:
+    </p>
+
+    <p><strong>Ethereum address:</strong></p>
+
+    <p
+        style="background-color: #f8f8f8; padding: 10px 15px; border-radius: 6px; display: inline-block; font-family: monospace; font-size: 0.95em;">
+        0xa4c59855d0ed6d3d0295fb5535eb6243b53b46d8
+    </p>
+
+    <br><br>
+    <img src="{{ url_for('static', filename='eth_qr.png') }}" alt="ETH QR Code" width="180">
+    <p style="font-size: 0.9em; color: gray;">Scan to tip with Ethereum</p>
+
+    <p style="margin-top: 30px;">
+        ☕ Prefer card or PayPal?<br>
+        <a href="https://coff.ee/your_local_dev" target="_blank" style="font-size: 1.1em;">
+            Buy me a coffee
+        </a>
+    </p>
+
+</body>
+
+</html>
